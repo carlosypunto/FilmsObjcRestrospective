@@ -13,6 +13,7 @@
 		0726EE1722104FC600C337F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0726EE1622104FC600C337F7 /* Assets.xcassets */; };
 		0726EE1A22104FC600C337F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0726EE1822104FC600C337F7 /* LaunchScreen.storyboard */; };
 		0726EE1D22104FC600C337F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726EE1C22104FC600C337F7 /* main.m */; };
+		0726EE4022107FD700C337F7 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0726EE3F22107FD700C337F7 /* Keys.plist */; };
 		5760C91CC4DEAA37B8767661 /* libPods-FilmsObjcRestrospectiveUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2277411BE0E58E348A11859 /* libPods-FilmsObjcRestrospectiveUITests.a */; };
 		81B74230480C0BA24E3F23BA /* libPods-FilmsObjcRestrospectiveTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C0ADEEEA4208E96AFC5B0A /* libPods-FilmsObjcRestrospectiveTests.a */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		0726EE2822104FC600C337F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0726EE2D22104FC700C337F7 /* FilmsObjcRestrospectiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmsObjcRestrospectiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0726EE3322104FC700C337F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0726EE3F22107FD700C337F7 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		27AAF89A60123C387300A30C /* Pods-FilmsObjcRestrospectiveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospectiveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospectiveTests/Pods-FilmsObjcRestrospectiveTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A96473016040569CAFAACF0 /* Pods-FilmsObjcRestrospectiveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospectiveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospectiveUITests/Pods-FilmsObjcRestrospectiveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EE953E1C4EBBC24EE7422DE /* Pods-FilmsObjcRestrospectiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospectiveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospectiveTests/Pods-FilmsObjcRestrospectiveTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		0726EE0122104FC500C337F7 = {
 			isa = PBXGroup;
 			children = (
+				0726EE3F22107FD700C337F7 /* Keys.plist */,
 				0726EE0C22104FC500C337F7 /* FilmsObjcRestrospective */,
 				0726EE2522104FC600C337F7 /* FilmsObjcRestrospectiveTests */,
 				0726EE3022104FC700C337F7 /* FilmsObjcRestrospectiveUITests */,
@@ -267,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0726EE4022107FD700C337F7 /* Keys.plist in Resources */,
 				0726EE1A22104FC600C337F7 /* LaunchScreen.storyboard in Resources */,
 				0726EE1722104FC600C337F7 /* Assets.xcassets in Resources */,
 				0726EE1522104FC600C337F7 /* Main.storyboard in Resources */,
