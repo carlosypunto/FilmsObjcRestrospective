@@ -14,6 +14,10 @@
 		0726EE1A22104FC600C337F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0726EE1822104FC600C337F7 /* LaunchScreen.storyboard */; };
 		0726EE1D22104FC600C337F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726EE1C22104FC600C337F7 /* main.m */; };
 		0726EE4022107FD700C337F7 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0726EE3F22107FD700C337F7 /* Keys.plist */; };
+		0726EE452210830500C337F7 /* DefaultAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726EE432210830500C337F7 /* DefaultAPIClient.m */; };
+		0726EE4D2210839B00C337F7 /* DiscoverResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726EE4B2210839B00C337F7 /* DiscoverResponse.m */; };
+		0726EE4E2210839B00C337F7 /* DiscoverResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726EE4C2210839B00C337F7 /* DiscoverResult.m */; };
+		0726EE502210852000C337F7 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0726EE4F2210852000C337F7 /* Keys.plist */; };
 		5760C91CC4DEAA37B8767661 /* libPods-FilmsObjcRestrospectiveUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2277411BE0E58E348A11859 /* libPods-FilmsObjcRestrospectiveUITests.a */; };
 		81B74230480C0BA24E3F23BA /* libPods-FilmsObjcRestrospectiveTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C0ADEEEA4208E96AFC5B0A /* libPods-FilmsObjcRestrospectiveTests.a */; };
 /* End PBXBuildFile section */
@@ -49,6 +53,14 @@
 		0726EE2D22104FC700C337F7 /* FilmsObjcRestrospectiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmsObjcRestrospectiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0726EE3322104FC700C337F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0726EE3F22107FD700C337F7 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		0726EE422210830500C337F7 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		0726EE432210830500C337F7 /* DefaultAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultAPIClient.m; sourceTree = "<group>"; };
+		0726EE442210830500C337F7 /* DefaultAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultAPIClient.h; sourceTree = "<group>"; };
+		0726EE492210839B00C337F7 /* DiscoverResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverResult.h; sourceTree = "<group>"; };
+		0726EE4A2210839B00C337F7 /* DiscoverResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverResponse.h; sourceTree = "<group>"; };
+		0726EE4B2210839B00C337F7 /* DiscoverResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverResponse.m; sourceTree = "<group>"; };
+		0726EE4C2210839B00C337F7 /* DiscoverResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverResult.m; sourceTree = "<group>"; };
+		0726EE4F2210852000C337F7 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = SOURCE_ROOT; };
 		27AAF89A60123C387300A30C /* Pods-FilmsObjcRestrospectiveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospectiveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospectiveTests/Pods-FilmsObjcRestrospectiveTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A96473016040569CAFAACF0 /* Pods-FilmsObjcRestrospectiveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospectiveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospectiveUITests/Pods-FilmsObjcRestrospectiveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EE953E1C4EBBC24EE7422DE /* Pods-FilmsObjcRestrospectiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospectiveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospectiveTests/Pods-FilmsObjcRestrospectiveTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,10 +128,12 @@
 			children = (
 				0726EE0D22104FC500C337F7 /* AppDelegate.h */,
 				0726EE0E22104FC600C337F7 /* AppDelegate.m */,
+				0726EE412210830500C337F7 /* Network */,
 				0726EE1322104FC600C337F7 /* Main.storyboard */,
 				0726EE1622104FC600C337F7 /* Assets.xcassets */,
 				0726EE1822104FC600C337F7 /* LaunchScreen.storyboard */,
 				0726EE1B22104FC600C337F7 /* Info.plist */,
+				0726EE4F2210852000C337F7 /* Keys.plist */,
 				0726EE1C22104FC600C337F7 /* main.m */,
 			);
 			path = FilmsObjcRestrospective;
@@ -139,6 +153,44 @@
 				0726EE3322104FC700C337F7 /* Info.plist */,
 			);
 			path = FilmsObjcRestrospectiveUITests;
+			sourceTree = "<group>";
+		};
+		0726EE412210830500C337F7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0726EE462210839B00C337F7 /* Models */,
+				0726EE422210830500C337F7 /* APIClient.h */,
+				0726EE442210830500C337F7 /* DefaultAPIClient.h */,
+				0726EE432210830500C337F7 /* DefaultAPIClient.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0726EE462210839B00C337F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0726EE472210839B00C337F7 /* Movie */,
+				0726EE482210839B00C337F7 /* Discover */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0726EE472210839B00C337F7 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		0726EE482210839B00C337F7 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				0726EE4A2210839B00C337F7 /* DiscoverResponse.h */,
+				0726EE4B2210839B00C337F7 /* DiscoverResponse.m */,
+				0726EE492210839B00C337F7 /* DiscoverResult.h */,
+				0726EE4C2210839B00C337F7 /* DiscoverResult.m */,
+			);
+			path = Discover;
 			sourceTree = "<group>";
 		};
 		7C2375D627172124EEA04AEE /* Frameworks */ = {
@@ -274,6 +326,7 @@
 				0726EE1A22104FC600C337F7 /* LaunchScreen.storyboard in Resources */,
 				0726EE1722104FC600C337F7 /* Assets.xcassets in Resources */,
 				0726EE1522104FC600C337F7 /* Main.storyboard in Resources */,
+				0726EE502210852000C337F7 /* Keys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +421,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0726EE1D22104FC600C337F7 /* main.m in Sources */,
+				0726EE4E2210839B00C337F7 /* DiscoverResult.m in Sources */,
+				0726EE452210830500C337F7 /* DefaultAPIClient.m in Sources */,
 				0726EE0F22104FC600C337F7 /* AppDelegate.m in Sources */,
+				0726EE4D2210839B00C337F7 /* DiscoverResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
