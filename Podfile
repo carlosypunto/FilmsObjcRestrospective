@@ -3,9 +3,9 @@ platform :ios, '10.0'
 target 'FilmsObjcRestrospective' do
 
   pod 'AFNetworking', '~> 3.0'
-  pod 'Mantle', '~> 2.1'
-  pod 'MTLManagedObjectAdapter', '~> 1.0'
-  pod 'Bolts', '~> 1.9'
+  pod 'Mantle', '~> 2.1', :inhibit_warnings => true
+  pod 'MTLManagedObjectAdapter', '~> 1.0', :inhibit_warnings => true
+  pod 'Bolts', '~> 1.9', :inhibit_warnings => true
 
   target 'FilmsObjcRestrospectiveTests' do
     inherit! :search_paths
