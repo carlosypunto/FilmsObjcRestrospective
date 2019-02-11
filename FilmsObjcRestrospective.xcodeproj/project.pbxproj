@@ -21,6 +21,7 @@
 		07B17BFF2210B6520037C03B /* DiscoverMoviesWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B17BF82210B6520037C03B /* DiscoverMoviesWireframe.m */; };
 		07B17C002210B6520037C03B /* DiscoverMoviesPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B17BF92210B6520037C03B /* DiscoverMoviesPresenter.m */; };
 		07B17C0422114BD00037C03B /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B17C0322114BD00037C03B /* MovieCollectionViewCell.m */; };
+		07B17C0C22115B890037C03B /* DisplayDiscoverMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B17C0B22115B880037C03B /* DisplayDiscoverMovie.m */; };
 		5760C91CC4DEAA37B8767661 /* libPods-FilmsObjcRestrospectiveUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2277411BE0E58E348A11859 /* libPods-FilmsObjcRestrospectiveUITests.a */; };
 		81B74230480C0BA24E3F23BA /* libPods-FilmsObjcRestrospectiveTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C0ADEEEA4208E96AFC5B0A /* libPods-FilmsObjcRestrospectiveTests.a */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,8 @@
 		07B17BFC2210B6520037C03B /* DiscoverMoviesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverMoviesViewController.h; sourceTree = "<group>"; };
 		07B17C0222114BD00037C03B /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
 		07B17C0322114BD00037C03B /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
+		07B17C0A22115B880037C03B /* DisplayDiscoverMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayDiscoverMovie.h; sourceTree = "<group>"; };
+		07B17C0B22115B880037C03B /* DisplayDiscoverMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayDiscoverMovie.m; sourceTree = "<group>"; };
 		27AAF89A60123C387300A30C /* Pods-FilmsObjcRestrospectiveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospectiveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospectiveTests/Pods-FilmsObjcRestrospectiveTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A96473016040569CAFAACF0 /* Pods-FilmsObjcRestrospectiveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospectiveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospectiveUITests/Pods-FilmsObjcRestrospectiveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EE953E1C4EBBC24EE7422DE /* Pods-FilmsObjcRestrospectiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospectiveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospectiveTests/Pods-FilmsObjcRestrospectiveTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -222,6 +225,7 @@
 				07B17BF72210B6520037C03B /* DiscoverMoviesInteractor.m */,
 				07B17BF52210B6520037C03B /* DiscoverMoviesPresenter.h */,
 				07B17BF92210B6520037C03B /* DiscoverMoviesPresenter.m */,
+				07B17C0922115B880037C03B /* Model */,
 				07B17BFC2210B6520037C03B /* DiscoverMoviesViewController.h */,
 				07B17BF62210B6520037C03B /* DiscoverMoviesViewController.m */,
 				07B17BF42210B6520037C03B /* DiscoverMoviesWireframe.h */,
@@ -238,6 +242,15 @@
 				07B17C0322114BD00037C03B /* MovieCollectionViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		07B17C0922115B880037C03B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07B17C0A22115B880037C03B /* DisplayDiscoverMovie.h */,
+				07B17C0B22115B880037C03B /* DisplayDiscoverMovie.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7C2375D627172124EEA04AEE /* Frameworks */ = {
@@ -472,6 +485,7 @@
 				0726EE452210830500C337F7 /* DefaultAPIClient.m in Sources */,
 				0726EE0F22104FC600C337F7 /* AppDelegate.m in Sources */,
 				07B17BFD2210B6520037C03B /* DiscoverMoviesViewController.m in Sources */,
+				07B17C0C22115B890037C03B /* DisplayDiscoverMovie.m in Sources */,
 				07B17BFE2210B6520037C03B /* DiscoverMoviesInteractor.m in Sources */,
 				07B17C002210B6520037C03B /* DiscoverMoviesPresenter.m in Sources */,
 				0726EE4D2210839B00C337F7 /* DiscoverResponse.m in Sources */,
