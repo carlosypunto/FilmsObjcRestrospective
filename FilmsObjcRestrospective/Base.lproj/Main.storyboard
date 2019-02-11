@@ -12,7 +12,7 @@
         <!--Discover Movies-->
         <scene sceneID="6md-BD-fR4">
             <objects>
-                <collectionViewController storyboardIdentifier="DiscoverMoviesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wxM-in-hPT" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="DiscoverMoviesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wxM-in-hPT" customClass="DiscoverMoviesViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="uqb-Mv-IAq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
