@@ -18,6 +18,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) NSNumber *voteAverage;
 @property (nonatomic, copy, readonly) NSNumber *popularity;
 
+- (instancetype)initWithTitle:(NSString *)title
+                    posterURL:(NSURL *)posterURL
+                  releaseDate:(NSString *)releaseDate
+                  voteAverage:(NSNumber *)voteAverage
+                   popularity:(NSNumber *)popularity;
+
 @end
 
 NS_ASSUME_NONNULL_END
