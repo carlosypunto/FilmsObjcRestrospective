@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DiscoverMoviesWireframe.h"
+#import <Bagel/Bagel.h>
 
 @interface AppDelegate ()
 
@@ -20,6 +21,9 @@
     UINavigationController *nc = (UINavigationController *) [self.window rootViewController];
     DiscoverMoviesViewController *vc = (DiscoverMoviesViewController *)nc.topViewController;
     [DiscoverMoviesWireframe configureModuleWithDiscoverMoviesViewController:vc];
+#ifdef DEBUG
+    [Bagel start];
+#endif
     return YES;
 }
 
