@@ -6,7 +6,6 @@ target 'FilmsObjcRestrospective' do
   pod 'Mantle', '~> 2.1', :inhibit_warnings => true
   pod 'MTLManagedObjectAdapter', '~> 1.0', :inhibit_warnings => true
   pod 'Bolts', '~> 1.9', :inhibit_warnings => true
-  pod 'BlocksKit', '~> 2.2', :inhibit_warnings => true
 
   target 'FilmsObjcRestrospectiveTests' do
     inherit! :search_paths

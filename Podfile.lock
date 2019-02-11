@@ -14,21 +14,6 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - BlocksKit (2.2.5):
-    - BlocksKit/All (= 2.2.5)
-  - BlocksKit/All (2.2.5):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
-    - BlocksKit/MessageUI
-    - BlocksKit/UIKit
-  - BlocksKit/Core (2.2.5)
-  - BlocksKit/DynamicDelegate (2.2.5)
-  - BlocksKit/MessageUI (2.2.5):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
-  - BlocksKit/UIKit (2.2.5):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
@@ -46,7 +31,6 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
-  - BlocksKit (~> 2.2)
   - Bolts (~> 1.9)
   - Mantle (~> 2.1)
   - MTLManagedObjectAdapter (~> 1.0)
@@ -54,18 +38,16 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
-    - BlocksKit
     - Bolts
     - Mantle
     - MTLManagedObjectAdapter
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
   MTLManagedObjectAdapter: 631a53432675dcf03a9d90624afb3cececf54631
 
-PODFILE CHECKSUM: 8d5671777302cb35f37a2d174b133488b5cfee06
+PODFILE CHECKSUM: f5b0fb7cac352d11aa987cf35caaff8e58819f3e
 
 COCOAPODS: 1.5.3
