@@ -7,6 +7,9 @@
 //
  
 #import "DiscoverMoviesPresenter.h"
+#import "NSArray+map.h"
+#import "DiscoverResult.h"
+#import "DisplayDiscoverMovie.h"
 
 @implementation DiscoverMoviesPresenter
 
@@ -14,7 +17,7 @@
 #pragma mark - DiscoverMoviesEventHandlerProtocol
 
 - (void)viewDidLoad {
-    //
+    [self.provider makeRequest];
 }
 
 
@@ -22,7 +25,18 @@
 #pragma mark - DiscoverMoviesInteractorOutputProtocol
 
 - (void)updateMovies:(NSArray *)movies {
-    
+    __weak typeof(self) welf = self;
+    NSArray *displayMovies = [movies mapObjectsUsingBlock:^id _Nonnull(id  _Nonnull obj, NSUInteger idx) {
+        DiscoverResult *discoverResult = (DiscoverResult *)obj;
+        NSURLRequest *posterRequest = [welf.provider getURLRequestForPosterWithPath:discoverResult.posterPath];
+        
+        return [[DisplayDiscoverMovie alloc] initWithTitle:discoverResult.title
+                                          posterURLRequest:posterRequest
+                                               releaseDate:discoverResult.releaseDate
+                                               voteAverage:[NSString stringWithFormat:@"%@", discoverResult.voteAverage]
+                                                popularity:[NSString stringWithFormat:@"%@", discoverResult.popularity]];
+    }];
+    [self.view displayDiscoverMovies:displayMovies];
 }
 
 

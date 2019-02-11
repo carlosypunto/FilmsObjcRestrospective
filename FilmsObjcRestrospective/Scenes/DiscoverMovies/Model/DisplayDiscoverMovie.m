@@ -11,23 +11,23 @@
 @interface DisplayDiscoverMovie ()
 
 @property (nonatomic, copy, readwrite) NSString *title;
-@property (nonatomic, copy, readwrite) NSURL *posterURL;
+@property (nonatomic, copy, readwrite) NSURLRequest *posterURLRequest;
 @property (nonatomic, copy, readwrite) NSString *releaseDate;
-@property (nonatomic, copy, readwrite) NSNumber *voteAverage;
-@property (nonatomic, copy, readwrite) NSNumber *popularity;
+@property (nonatomic, copy, readwrite) NSString *voteAverage;
+@property (nonatomic, copy, readwrite) NSString *popularity;
 
 @end
 
 @implementation DisplayDiscoverMovie
 
 - (instancetype)initWithTitle:(NSString *)title
-                    posterURL:(NSURL *)posterURL
+             posterURLRequest:(NSURLRequest *)posterURLRequest
                   releaseDate:(NSString *)releaseDate
-                  voteAverage:(NSNumber *)voteAverage
-                   popularity:(NSNumber *)popularity {
+                  voteAverage:(NSString *)voteAverage
+                   popularity:(NSString *)popularity {
     
     self.title = title;
-    self.posterURL = posterURL;
+    self.posterURLRequest = posterURLRequest;
     self.releaseDate = releaseDate;
     self.voteAverage = voteAverage;
     self.popularity = popularity;

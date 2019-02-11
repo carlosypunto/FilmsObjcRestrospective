@@ -29,6 +29,7 @@
 
 /** Presenter -> Interactor */
 - (void)makeRequest;
+- (NSURLRequest *)getURLRequestForPosterWithPath:(NSString *)path;
 
 @end
 

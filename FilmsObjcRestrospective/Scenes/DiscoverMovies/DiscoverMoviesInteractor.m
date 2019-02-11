@@ -55,6 +55,11 @@
                                  }];
 }
 
+- (NSURLRequest *)getURLRequestForPosterWithPath:(NSString *)path {
+    return [DefaultAPIClient getURLRequestForPosterSize:APIClientPosterSize185
+                                           andImagePath:path];
+}
+
 
 
 #pragma mark - Required for presenter @property

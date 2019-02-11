@@ -13,16 +13,16 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DisplayDiscoverMovie : NSObject
 
 @property (nonatomic, copy, readonly) NSString *title;
-@property (nonatomic, copy, readonly) NSURL *posterURL;
+@property (nonatomic, copy, readonly) NSURLRequest *posterURLRequest;
 @property (nonatomic, copy, readonly) NSString *releaseDate;
-@property (nonatomic, copy, readonly) NSNumber *voteAverage;
-@property (nonatomic, copy, readonly) NSNumber *popularity;
+@property (nonatomic, copy, readonly) NSString *voteAverage;
+@property (nonatomic, copy, readonly) NSString *popularity;
 
 - (instancetype)initWithTitle:(NSString *)title
-                    posterURL:(NSURL *)posterURL
+             posterURLRequest:(NSURLRequest *)posterURLRequest
                   releaseDate:(NSString *)releaseDate
-                  voteAverage:(NSNumber *)voteAverage
-                   popularity:(NSNumber *)popularity;
+                  voteAverage:(NSString *)voteAverage
+                   popularity:(NSString *)popularity;
 
 @end
 
