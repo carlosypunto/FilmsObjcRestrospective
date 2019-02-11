@@ -16,7 +16,7 @@
 
 #pragma mark - DiscoverMoviesEventHandlerProtocol
 
-- (void)viewDidLoad {
+- (void)retrieveData {
     [self.provider makeRequest];
 }
 

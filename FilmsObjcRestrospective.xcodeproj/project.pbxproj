@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		070904F722121826009F3462 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0726EE4F2210852000C337F7 /* Keys.plist */; };
 		070904FA22122064009F3462 /* UIColor+projectColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 070904F922122064009F3462 /* UIColor+projectColors.m */; };
+		070904FD22123758009F3462 /* UIScrollView+isNearBottomEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 070904FC22123757009F3462 /* UIScrollView+isNearBottomEdge.m */; };
 		0726EE0F22104FC600C337F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0726EE0E22104FC600C337F7 /* AppDelegate.m */; };
 		0726EE1522104FC600C337F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0726EE1322104FC600C337F7 /* Main.storyboard */; };
 		0726EE1722104FC600C337F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0726EE1622104FC600C337F7 /* Assets.xcassets */; };
@@ -49,6 +50,8 @@
 /* Begin PBXFileReference section */
 		070904F822122064009F3462 /* UIColor+projectColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+projectColors.h"; sourceTree = "<group>"; };
 		070904F922122064009F3462 /* UIColor+projectColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+projectColors.m"; sourceTree = "<group>"; };
+		070904FB22123757009F3462 /* UIScrollView+isNearBottomEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+isNearBottomEdge.h"; path = "../../../MisPelisObjc/MisPelisObjc/Categories/UIScrollView+isNearBottomEdge.h"; sourceTree = "<group>"; };
+		070904FC22123757009F3462 /* UIScrollView+isNearBottomEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+isNearBottomEdge.m"; path = "../../../MisPelisObjc/MisPelisObjc/Categories/UIScrollView+isNearBottomEdge.m"; sourceTree = "<group>"; };
 		0726EE0A22104FC500C337F7 /* FilmsObjcRestrospective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmsObjcRestrospective.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0726EE0D22104FC500C337F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0726EE0E22104FC600C337F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 				07B17C0E221161440037C03B /* NSArray+map.m */,
 				070904F822122064009F3462 /* UIColor+projectColors.h */,
 				070904F922122064009F3462 /* UIColor+projectColors.m */,
+				070904FB22123757009F3462 /* UIScrollView+isNearBottomEdge.h */,
+				070904FC22123757009F3462 /* UIScrollView+isNearBottomEdge.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -534,6 +539,7 @@
 				07B17BFF2210B6520037C03B /* DiscoverMoviesWireframe.m in Sources */,
 				07B17C0422114BD00037C03B /* MovieCollectionViewCell.m in Sources */,
 				0726EE1D22104FC600C337F7 /* main.m in Sources */,
+				070904FD22123758009F3462 /* UIScrollView+isNearBottomEdge.m in Sources */,
 				0726EE4E2210839B00C337F7 /* DiscoverResult.m in Sources */,
 				0726EE452210830500C337F7 /* DefaultAPIClient.m in Sources */,
 				0726EE0F22104FC600C337F7 /* AppDelegate.m in Sources */,

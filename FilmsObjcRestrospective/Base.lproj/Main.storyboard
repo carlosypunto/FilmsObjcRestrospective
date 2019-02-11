@@ -103,6 +103,9 @@
                                                 </stackView>
                                             </subviews>
                                         </stackView>
+                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="1co-GZ-BO2">
+                                            <rect key="frame" x="82.666666666666671" y="185" width="20" height="20"/>
+                                        </activityIndicatorView>
                                     </subviews>
                                 </view>
                                 <constraints>
@@ -115,10 +118,13 @@
                                     <constraint firstAttribute="trailing" secondItem="855-K7-3mN" secondAttribute="trailing" constant="10" id="R2y-8L-TeY"/>
                                     <constraint firstAttribute="trailing" secondItem="oCf-Q7-G3j" secondAttribute="trailing" constant="10" id="ZSg-Na-D2B"/>
                                     <constraint firstItem="a7m-Ok-TIp" firstAttribute="leading" secondItem="PiG-SP-VAN" secondAttribute="leading" constant="10" id="a1l-lM-ih4"/>
+                                    <constraint firstItem="1co-GZ-BO2" firstAttribute="centerX" secondItem="oCf-Q7-G3j" secondAttribute="centerX" id="lt2-R1-m5O"/>
+                                    <constraint firstItem="1co-GZ-BO2" firstAttribute="centerY" secondItem="oCf-Q7-G3j" secondAttribute="centerY" multiplier="1.5" id="nra-d5-a7K"/>
                                     <constraint firstAttribute="trailing" secondItem="a7m-Ok-TIp" secondAttribute="trailing" constant="10" id="yl6-yB-ZoQ"/>
                                 </constraints>
                                 <size key="customSize" width="185" height="300"/>
                                 <connections>
+                                    <outlet property="activityIndicator" destination="1co-GZ-BO2" id="UJ6-0Q-6vE"/>
                                     <outlet property="dateLabel" destination="Cqb-EU-phC" id="TmS-VG-zZN"/>
                                     <outlet property="imageView" destination="oCf-Q7-G3j" id="fQ0-gg-BXb"/>
                                     <outlet property="popularityLabel" destination="It5-hg-svp" id="1Hw-Hy-4cf"/>

@@ -12,7 +12,7 @@
 
 @protocol DiscoverMoviesEventHandlerProtocol <NSObject>
 /** View -> Presenter */
-- (void)viewDidLoad;
+- (void)retrieveData;
 @end
 
 @protocol DiscoverMoviesInteractorOutputProtocol <NSObject>

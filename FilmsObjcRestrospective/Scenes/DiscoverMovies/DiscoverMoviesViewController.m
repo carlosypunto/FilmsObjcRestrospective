@@ -10,7 +10,7 @@
 #import "DisplayDiscoverMovie.h"
 #import "MovieCollectionViewCell.h"
 #import "UIColor+projectColors.h"
-#import <AFNetworking/AFImageDownloader.h>
+#import "UIScrollView+isNearBottomEdge.h"
 
 static NSString* const DiscoverMoviesCellIdentifier = @"MovieCell";
 
@@ -28,7 +28,7 @@ static NSString* const DiscoverMoviesCellIdentifier = @"MovieCell";
     // setup views
     self.collectionView.backgroundColor = [UIColor lightGray];
     
-    [self.eventHandler viewDidLoad];
+    [self.eventHandler retrieveData];
 }
 
 
@@ -65,16 +65,19 @@ static NSString* const DiscoverMoviesCellIdentifier = @"MovieCell";
     cell.imageView.layer.cornerRadius = 4.0;
     cell.layer.cornerRadius = 14.0;
     cell.backgroundColor = [UIColor whiteColor];
-    
-    AFImageDownloader* dow = [[AFImageDownloader alloc] init];
-    [dow downloadImageForURLRequest:displayDiscoverMovie.posterURLRequest
-                            success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull responseObject) {
-                                cell.imageView.image = responseObject;
-    }
-                            failure:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, NSError * _Nonnull error) {
-                                cell.imageView.image = [UIImage imageNamed:@"PosterSize185"];
-    }];
+    cell.posterURLRequest = displayDiscoverMovie.posterURLRequest;
+    [cell retrieveImage];
     return cell;
+}
+
+#pragma mark - TableView Datasource
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat distance = 150.0;
+    BOOL isNear = [scrollView isNearToBottomEdgeAtLeast: distance];
+    if (isNear) {
+        [self.eventHandler retrieveData];
+    }
 }
 
 @end
