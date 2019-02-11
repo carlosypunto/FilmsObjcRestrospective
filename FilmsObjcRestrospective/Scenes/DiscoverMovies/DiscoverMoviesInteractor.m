@@ -12,6 +12,10 @@
 
 #pragma mark - InteractorProtocol
 
+- (void)makeRequest {
+    
+}
+
 
 
 #pragma mark - Required for presenter @property

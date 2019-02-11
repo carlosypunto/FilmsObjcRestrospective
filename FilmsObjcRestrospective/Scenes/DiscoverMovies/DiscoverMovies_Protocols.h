@@ -17,6 +17,7 @@
 
 @protocol DiscoverMoviesInteractorOutputProtocol <NSObject>
 /** Interactor -> Presenter */
+- (void)updateMovies:(NSArray *)movies;
 @end
 
 #pragma mark - InteractorProtocol
@@ -25,7 +26,9 @@
 /** Required for presenter @property */
 - (void)setOutput:(id<DiscoverMoviesInteractorOutputProtocol>)output;
 - (id<DiscoverMoviesInteractorOutputProtocol>)getOutput;
+
 /** Presenter -> Interactor */
+- (void)makeRequest;
 
 @end
 
@@ -33,6 +36,7 @@
 
 @protocol DiscoverMoviesViewProtocol <NSObject>
 /** Presenter -> ViewController */
+- (void)displayDiscoverMovies:(NSArray *)movies;
 @end
 
 #pragma mark - WireFrameProtocol

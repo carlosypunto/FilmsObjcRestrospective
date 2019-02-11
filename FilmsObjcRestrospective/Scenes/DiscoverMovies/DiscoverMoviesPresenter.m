@@ -21,7 +21,9 @@
 
 #pragma mark - DiscoverMoviesInteractorOutputProtocol
 
-
+- (void)updateMovies:(NSArray *)movies {
+    
+}
 
 
 

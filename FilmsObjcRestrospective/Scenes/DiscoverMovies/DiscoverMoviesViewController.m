@@ -23,9 +23,12 @@
     [self.eventHandler viewDidLoad];
 }
 
+
 # pragma mark - DiscoverMoviesViewProtocol
 
-
+- (void)displayDiscoverMovies:(NSArray *)movies {
+    
+}
 
 
 
