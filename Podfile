@@ -1,15 +1,14 @@
 platform :ios, '10.0'
 
 target 'FilmsObjcRestrospective' do
-  use_frameworks!
 
   pod 'AFNetworking', '~> 3.0'
   pod 'Mantle', '~> 2.1', :inhibit_warnings => true
   pod 'MTLManagedObjectAdapter', '~> 1.0', :inhibit_warnings => true
   pod 'Bolts', '~> 1.9', :inhibit_warnings => true
-
-  pod 'CocoaAsyncSocket', '~> 7.6.3', :inhibit_warnings => true
-  pod 'Bagel', '~>  1.3.2', :inhibit_warnings => true
+  
+  pod 'CocoaAsyncSocket', '~> 7.6.3', :modular_headers => true, :inhibit_warnings => true
+  pod 'Bagel', '~> 1.3.2', :inhibit_warnings => true
 
   target 'FilmsObjcRestrospectiveTests' do
     inherit! :search_paths

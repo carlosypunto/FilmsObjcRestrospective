@@ -25,9 +25,9 @@
 		07B17C0422114BD00037C03B /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B17C0322114BD00037C03B /* MovieCollectionViewCell.m */; };
 		07B17C0C22115B890037C03B /* DisplayDiscoverMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B17C0B22115B880037C03B /* DisplayDiscoverMovie.m */; };
 		07B17C0F221161440037C03B /* NSArray+map.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B17C0E221161440037C03B /* NSArray+map.m */; };
-		91BB8F830C2913A0E6749A9E /* Pods_FilmsObjcRestrospectiveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5389EE365329F2B7BFEFD8 /* Pods_FilmsObjcRestrospectiveUITests.framework */; };
-		DBEDC907F66FF038EB7FB755 /* Pods_FilmsObjcRestrospectiveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FE42DFBC799310577462B6 /* Pods_FilmsObjcRestrospectiveTests.framework */; };
-		F9413844966780E745C0862E /* Pods_FilmsObjcRestrospective.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D70266396023D778B065B0FA /* Pods_FilmsObjcRestrospective.framework */; };
+		4BF942C0E8103440C7CF9314 /* libPods-FilmsObjcRestrospectiveUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE8E22DEA57671CBB61B9C3 /* libPods-FilmsObjcRestrospectiveUITests.a */; };
+		619D76012465469CBDF6EDC0 /* libPods-FilmsObjcRestrospectiveTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1857F8D04CBE8805F2457F63 /* libPods-FilmsObjcRestrospectiveTests.a */; };
+		958C23E39B42AF418126BFC6 /* libPods-FilmsObjcRestrospective.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 868F12838BDE56A616F0FBC2 /* libPods-FilmsObjcRestrospective.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,14 +87,14 @@
 		07B17C0B22115B880037C03B /* DisplayDiscoverMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayDiscoverMovie.m; sourceTree = "<group>"; };
 		07B17C0D221161440037C03B /* NSArray+map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+map.h"; sourceTree = "<group>"; };
 		07B17C0E221161440037C03B /* NSArray+map.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+map.m"; sourceTree = "<group>"; };
-		19FE42DFBC799310577462B6 /* Pods_FilmsObjcRestrospectiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilmsObjcRestrospectiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1857F8D04CBE8805F2457F63 /* libPods-FilmsObjcRestrospectiveTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FilmsObjcRestrospectiveTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27AAF89A60123C387300A30C /* Pods-FilmsObjcRestrospectiveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospectiveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospectiveTests/Pods-FilmsObjcRestrospectiveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CE8E22DEA57671CBB61B9C3 /* libPods-FilmsObjcRestrospectiveUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FilmsObjcRestrospectiveUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A96473016040569CAFAACF0 /* Pods-FilmsObjcRestrospectiveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospectiveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospectiveUITests/Pods-FilmsObjcRestrospectiveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EE953E1C4EBBC24EE7422DE /* Pods-FilmsObjcRestrospectiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospectiveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospectiveTests/Pods-FilmsObjcRestrospectiveTests.release.xcconfig"; sourceTree = "<group>"; };
-		6E5389EE365329F2B7BFEFD8 /* Pods_FilmsObjcRestrospectiveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilmsObjcRestrospectiveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F08F03117D89F939A393F3B /* Pods-FilmsObjcRestrospective.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospective.release.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospective/Pods-FilmsObjcRestrospective.release.xcconfig"; sourceTree = "<group>"; };
+		868F12838BDE56A616F0FBC2 /* libPods-FilmsObjcRestrospective.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FilmsObjcRestrospective.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7464ACC4DA8A128C59E4E91 /* Pods-FilmsObjcRestrospectiveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospectiveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospectiveUITests/Pods-FilmsObjcRestrospectiveUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D70266396023D778B065B0FA /* Pods_FilmsObjcRestrospective.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilmsObjcRestrospective.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE415F8B4C95F685CAA81694 /* Pods-FilmsObjcRestrospective.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmsObjcRestrospective.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmsObjcRestrospective/Pods-FilmsObjcRestrospective.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9413844966780E745C0862E /* Pods_FilmsObjcRestrospective.framework in Frameworks */,
+				958C23E39B42AF418126BFC6 /* libPods-FilmsObjcRestrospective.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBEDC907F66FF038EB7FB755 /* Pods_FilmsObjcRestrospectiveTests.framework in Frameworks */,
+				619D76012465469CBDF6EDC0 /* libPods-FilmsObjcRestrospectiveTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91BB8F830C2913A0E6749A9E /* Pods_FilmsObjcRestrospectiveUITests.framework in Frameworks */,
+				4BF942C0E8103440C7CF9314 /* libPods-FilmsObjcRestrospectiveUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +280,9 @@
 		7C2375D627172124EEA04AEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D70266396023D778B065B0FA /* Pods_FilmsObjcRestrospective.framework */,
-				19FE42DFBC799310577462B6 /* Pods_FilmsObjcRestrospectiveTests.framework */,
-				6E5389EE365329F2B7BFEFD8 /* Pods_FilmsObjcRestrospectiveUITests.framework */,
+				868F12838BDE56A616F0FBC2 /* libPods-FilmsObjcRestrospective.a */,
+				1857F8D04CBE8805F2457F63 /* libPods-FilmsObjcRestrospectiveTests.a */,
+				4CE8E22DEA57671CBB61B9C3 /* libPods-FilmsObjcRestrospectiveUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -311,7 +311,6 @@
 				0726EE0622104FC500C337F7 /* Sources */,
 				0726EE0722104FC500C337F7 /* Frameworks */,
 				0726EE0822104FC500C337F7 /* Resources */,
-				2A7367F414640B0DBF7DF041 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -451,38 +450,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2A7367F414640B0DBF7DF041 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FilmsObjcRestrospective/Pods-FilmsObjcRestrospective-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/Bagel/Bagel.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
-				"${BUILT_PRODUCTS_DIR}/MTLManagedObjectAdapter/MTLManagedObjectAdapter.framework",
-				"${BUILT_PRODUCTS_DIR}/Mantle/Mantle.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bagel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MTLManagedObjectAdapter.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mantle.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FilmsObjcRestrospective/Pods-FilmsObjcRestrospective-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C1CB29527D4EE5F73080E573 /* [CP] Check Pods Manifest.lock */ = {
